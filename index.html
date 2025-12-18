@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenLayer Deep Checker</title>
+    <style>
+        body { font-family: 'Arial Black', sans-serif; background: #0d1117; color: white; text-align: center; padding-top: 50px; }
+        #status { font-size: 0.8rem; color: #33ff33; margin-bottom: 15px; font-family: monospace; }
+        .box { max-width: 400px; margin: auto; background: #161b22; padding: 30px; border-radius: 20px; border: 3px solid #5865f2; }
+        input { width: 85%; padding: 15px; border-radius: 10px; border: none; font-size: 1.1rem; margin-bottom: 10px; text-align: center; }
+        button { background: #5865f2; color: white; padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; width: 95%; }
+        #result { margin-top: 25px; display: none; padding: 20px; border-radius: 15px; background: #000; border: 2px solid #fff; }
+        .name-txt { font-size: 1.8rem; text-transform: uppercase; display: block; }
+        .lvl-txt { font-size: 1.4rem; color: #8b949e; margin: 5px 0; }
+        .role-txt { font-size: 2rem; font-weight: bold; display: block; }
+    </style>
+</head>
+<body>
+
+    <div id="status">📡 SCANNING GENLAYER DATABASE...</div>
+
+    <div class="box">
+        <h2>RANK CHECKER</h2>
+        <input type="text" id="userInput" placeholder="EXACT USERNAME...">
+        <button onclick="checkRank()">CHECK RANK 🔍</button>
+
+        <div id="result">
+            <span id="outName" class="name-txt"></span>
+            <div id="outLvl
